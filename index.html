@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Rohit Sopankar</title>
+  <link rel="stylesheet" href="./css/MAIN.css">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+  
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <div class="container" >
+    <!-- Navigation-->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+    <!--  <label class="logo">DesignX</label> -->
+      <ul>
+          <li>          
+            <a href="#aboutme" id="about" onclick="uncheck()">About</a>
+        </li>
+        <li>          
+            <a href="#qualification-div" id="qualification" onclick="uncheck()">Education</a>
+        </li>
+        <li>
+            <a href="#courses-div" id="courses" onclick="uncheck()">Courses</a>
+        </li>        
+          <li>
+            <a href="#contact-div" id="contact" onclick="uncheck()">Contact</a>
+        </li>
+
+        <li>
+            <a href="./images/rohitsopankar.pdf" id="nav-resume-btn" target="_blank" rel="noopener noreferrer">Resume</a>
+          </li>
+      </ul>
+    </nav>
+
+      
+    <!--End of Navigation-->
+    
+    <div id="left"></div>
+    <div id="middle">
+    <!-- Introduction-->
+    <div class="intro" data-aos="fade-up" data-aos-delay="200">
+      <div id="content-container">
+        <h5 id="myname">Hello, my name is</h5>
+        <h1 id="name">Rohit Sopankar.</h1>
+        <h2 id="description">I'm a full stack web developer.</h2>
+        <button class='btn block-cube block-cube-hover' type='submit'>
+          <div class='bg-top'>
+            <div class='bg-inner'></div>
+          </div>
+          <div class='bg-right'>
+            <div class='bg-inner'></div>
+          </div>
+          <div class='bg'>
+            <div class='bg-inner'></div>
+          </div>
+          <div class='text'>
+            <a href="mailto:sopanakarr@gmail.com">Check Out Me</a>
+          </div>
+        </button>
+      </div>
+<!-- 
+      <div>
+        <img src="./images/rohit.">
+      </div>
+ -->
+
+   <!--End of Introduction-->
+
+        <!-- About-->
+        <div class="about" id="aboutme" data-aos="fade-up" data-aos-delay="200">
+        <div id="content-container">
+            <div class="index">
+                <p id="content-heading">About Me</p>
+            </div>
+          <div class="row">
+                <div class="column">
+                    <h5>I'm a full stack web developer. My expertise is to design and create fully functional websites,
+                      Mobile apps and many more..</h5>  
+                      <h5>Here are a few programming language I've been learning and working with recently:
+                      </h5>
+                      <ul id="tech-stack">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        
+                        <br>
+                        
+                        <li>React</li>
+                        
+                        <li>MySQL</li>
+                      </ul>
+              </div>
+              <br>
+
+              <div class="column">
+                  <div id="profile-image">
+                    <img src="./images/profile.png" alt="" id="profile-pic">   
+                 </div>
+                
+            
+                 
+            </div>
+        </div>
+    </div>
+    <!-- End of About-->
+
+    <!--Qualification-->
+    <div class="qualification" id="qualification-div" data-aos="fade-up" data-aos-delay="200">
+      <div id="content-container">
+        <div class="index">
+          <p id="content-heading" id="content-heading">Qualification</p>
+      </div>
+      <div id="tab-container">
+        <div class="tab">
+          <button class="tablinks" onclick="openQualification(event, 'Graduation')" id="defaultOpen">Graduation</button>          
+          <button class="tablinks" onclick="openQualification(event, 'HSC')">HSC</button>
+          <button class="tablinks" onclick="openQualification(event, 'SSC')">SSC</button>
+          </div>
+
+          <div id="Graduation" class="tabcontent">
+            <h3>Bachelor Of Engineering</h3>
+            <p id="year">2018-2021</p>
+            <p>Computer Engineering</p>
+            <p>Dr. Babasaheb Ambedkar Technology University, Lonara</p>
+            <p>Pursing</p>
+            <p>Grades: 0 </p>
+            
+           </div>
+
+            <div id="HSC" class="tabcontent">
+              <h3>Higher Secondary Education</h3>
+              <p id="year">2016-2018</p>
+              <p>Maharashtra State Board of Secondary and Higher Secondary Education, Pune </p>
+              <p>Grades: 56.40%</p>
+            </div>
+
+
+           <div id="SSC" class="tabcontent">
+             <h3>Secondary Secondary Education</h3>
+             <p id="year">2015-2016</p>
+             <p>Maharashtra State Board of Secondary and Higher Secondary Education, Pune </p>
+             <p>Grades: 68.80%</p>
+          </div>
+        </div>
+      </div>
+        
+    </div>         
+    
+    <div class="Courses" id="courses-div" data-aos="fade-up" data-aos-delay="200">
+      <div id="content-container">
+        <div class="index">
+          <p id="content-heading" id="content-heading">Courses</p>
+      </div>
+
+
+      <div class="tab">
+        <button class="tablinks" onclick="openQualification(event, 'course1')" id="defaultOpen">Programming With Python</button>          
+        <button class="tablinks" onclick="openQualification(event, 'course2')">The Complete Web Developer Course 2.0</button>
+        <button class="tablinks" onclick="openQualification(event, 'course3')">Game Development Using PyGame</button>
+      </div>
+
+      <div id="course1" class="tabcontent">
+        <aside>
+          <h4>Internshala Trainings, Online</h4>
+          <h3>Jul 2020 - Aug 2020</h3>            
+          Successfully completed a six weeks 
+          online certied training on Programming with Python.
+          The training consisted of Introduction to Python, 
+          Using Variables in Python, Basics of Programming in
+           Python, Principles of Object-oriented Programming (OOP),
+          Connecting to SQLite Database, Developing a GUI with
+          PyQT and Application of Python in Various Disciplines modules.
+          I scored 77% marks            
+        </aside>
+      </div>
+
+      <div id="course2" class="tabcontent">
+          <aside>
+            <h4>GUVI, Online</h4>
+            <h3>Dec 2020 - Dec 2020</h3>
+            Studied about Introduction to PyGame,
+            Pygame Code, Event Loop Pygame,Even
+            Loop DeepDive, Shapes Pygame, etc.
+          </aside>
+      </div>
+
+      <div id="course3" class="tabcontent">
+        <aside>            
+          <h4>udemy, Online </h4>
+          <h3> Mar 2020 - Apr 2020 </h3>
+          I had Learn Web Development and
+          mobile apps using HTML, CSS, Javascript,
+          PHP, Python, MySQL & more!            
+        </aside>            
+      </div>
+</div>
+      <!--End of: Some things i have built-->
+
+    <!--Whats next-->
+      <div class="contact" id="contact-div" data-aos="fade-up" data-aos-delay="200">
+        <div id="content-container">
+            <div class="getintouch">
+                <h5 class="Whats-next" id="myname">What's Next ?</h5>
+                <h1>Contact me</h1>
+                <h5>I am currently looking for any new opportunities, my inbox is always open. You can interested in my work say hello, I'll try to You can good experience with me!</h5>
+                     <button class='btn block-cube block-cube-hover' type='submit'>
+          <div class='bg-top'>
+            <div class='bg-inner'></div>
+          </div>
+          <div class='bg-right'>
+            <div class='bg-inner'></div>
+          </div>
+          <div class='bg'>
+            <div class='bg-inner'></div>
+          </div>
+          <div class='text'>
+           <a href="mailto:sopanakarr@gmail.com">Say Hello Me</a>
+          </div>
+        </button>
+            </div>
+        </div>
+      </div>
+
+
+
+<footer>
+    <div class="icons">
+      <a href="https://www.facebook.com/rohit.sopankar.77/" title="Facebook" target="_black"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/Rohit_Sopankar/" title="Instagram" target="_black"><i class="fab fa-instagram-square"></i></a>
+    </div>                
+    
+    <div>
+      
+        <h6 id="copyright">Designed & Build by Rohit Sopankar</h6>
+    </div>
+  </footer>
+</div>
+
+  
+  <!--Scroll Animation-->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({easing: 'ease'});
+  </script>
+
+ <!--Vertical tab-->
+ <script>
+  function openQualification(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script> 
+
+  <script>
+    function uncheck()
+    {
+      if(document.getElementById("about")|| document.getElementById("qualification")||document.getElementById("projects")||document.getElementById("contact"))
+      {
+        document.getElementById("check").checked = false;
+
+      }
+
+    }
+  </script>
+</body>
+</html>
